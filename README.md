@@ -15,7 +15,7 @@ Requirements
 ------------
 
 * [jQuery](https://github.com/jquery/jquery) (latest master)
-* [Boostrap](https://github.com/twbs/bootstrap) (latest master)
+* [Bootstrap](https://github.com/twbs/bootstrap) (latest master)
 
 ## Quick start
 
