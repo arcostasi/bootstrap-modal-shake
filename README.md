@@ -1,7 +1,9 @@
-Bootstrap Modal Shake, v1.0
+Bootstrap Modal Shake, v1.1
 =======
 
 A jQuery plugin animation to Bootstrap 3 Modal.
+
+See the [online demo](http://arcostasi.com/modalshake/).
 
 NOTE : If you want to contribute don't hesitate, I'll review any public release.
 

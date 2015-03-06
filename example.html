@@ -8,13 +8,25 @@
     <title>Bootstrap Modal Shake Example</title>
 
     <!-- Bootstrap minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
     <!-- Bootstrap Modal Shake CSS -->
     <link href="bootstrap-modal-shake.css" rel="stylesheet">
 </head>
 
 <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <h1>Bootstrap Modal Shake</h1>
+                <hr>
+                <button type="button" id="buttonModal" class="btn btn-primary">Show Modal Example</button>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
 
     <!-- Modal Example -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="true" data-backdrop="static">
@@ -45,18 +57,18 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" id="buttonShake" class="btn btn-primary">Ok</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close <i class="glyphicon glyphicon-remove"></i></button>
+                    <button type="button" id="buttonShake" class="btn btn-primary">Shake <i class="glyphicon glyphicon-ok"></i></button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- jQuery minified JavaScript -->
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 
     <!-- Bootstrap minified JavaScript -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <!-- Bootstrap Modal Shake JavaScript -->
     <script src="bootstrap-modal-shake.js"></script>
@@ -65,6 +77,10 @@
     $(function() {
 
         $('#myModal').modal('show');
+
+        $('#buttonModal').click(function(event) {
+            $('#myModal').modal('show');
+        });
 
         $('#buttonShake').click(function(event) {
             if (validateFields()) {
